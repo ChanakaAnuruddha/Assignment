@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="bookstore_2.12"
+		revision="0.1"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20190404135722"/>
+	<dependencies>
+		<module organisation="com.newmotion" name="akka-rabbitmq_2.12">
+			<revision name="5.0.4-beta" status="release" pubdate="20181130012525" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/NewMotion/akka-rabbitmq" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3363" time="0" location="/home/chanaka/.ivy2/cache/com.newmotion/akka-rabbitmq_2.12/ivy-5.0.4-beta.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/newmotion/akka-rabbitmq_2.12/5.0.4-beta/akka-rabbitmq_2.12-5.0.4-beta.pom"/>
+				<caller organisation="default" name="bookstore_2.12" conf="compile, runtime-internal, runtime, optional" rev="5.0.4-beta" rev-constraint-default="5.0.4-beta" rev-constraint-dynamic="5.0.4-beta" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="akka-rabbitmq_2.12" type="jar" ext="jar" status="no" details="" size="138765" time="0" location="/home/chanaka/.ivy2/cache/com.newmotion/akka-rabbitmq_2.12/jars/akka-rabbitmq_2.12-5.0.4-beta.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/newmotion/akka-rabbitmq_2.12/5.0.4-beta/akka-rabbitmq_2.12-5.0.4-beta.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.rabbitmq" name="amqp-client">
+			<revision name="5.4.2" status="release" pubdate="20180926233717" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.rabbitmq.com" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="ASL 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<license name="GPL v2" url="http://www.gnu.org/licenses/gpl-2.0.txt"/>
+				<license name="MPL 1.1" url="http://www.mozilla.org/MPL/MPL-1.1.txt"/>
+				<metadata-artifact status="no" details="" size="8474" time="0" location="/home/chanaka/.ivy2/cache/com.rabbitmq/amqp-client/ivy-5.4.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/rabbitmq/amqp-client/5.4.2/amqp-client-5.4.2.pom"/>
+				<caller organisation="com.newmotion" name="akka-rabbitmq_2.12" conf="default, compile, runtime, master" rev="5.4.2" rev-constraint-default="5.4.2" rev-constraint-dynamic="5.4.2" callerrev="5.0.4-beta"/>
+				<artifacts>
+					<artifact name="amqp-client" type="jar" ext="jar" status="no" details="" size="587381" time="0" location="/home/chanaka/.ivy2/cache/com.rabbitmq/amqp-client/jars/amqp-client-5.4.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/rabbitmq/amqp-client/5.4.2/amqp-client-5.4.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.25" status="release" pubdate="20170316220632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="4">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="5377" time="0" location="/home/chanaka/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.pom"/>
+				<caller organisation="com.rabbitmq" name="amqp-client" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="5.4.2"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41203" time="0" location="/home/chanaka/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.25.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.gson" name="gson">
+			<revision name="2.8.2" status="release" pubdate="20170920071242" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3598" time="0" location="/home/chanaka/.ivy2/cache/com.google.code.gson/gson/ivy-2.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.2/gson-2.8.2.pom"/>
+				<caller organisation="default" name="bookstore_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.8.2" rev-constraint-default="2.8.2" rev-constraint-dynamic="2.8.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="gson" type="jar" ext="jar" status="no" details="" size="232932" time="0" location="/home/chanaka/.ivy2/cache/com.google.code.gson/gson/jars/gson-2.8.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.8" status="release" pubdate="20181204154556" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.8/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="Apache-2.0" url="https://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2656" time="0" location="/home/chanaka/.ivy2/cache/org.scala-lang/scala-library/ivy-2.12.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/scala-library-2.12.8.pom"/>
+				<caller organisation="com.newmotion" name="akka-rabbitmq_2.12" conf="default, compile, runtime, master" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="5.0.4-beta"/>
+				<caller organisation="default" name="bookstore_2.12" conf="compile, runtime-internal, runtime, optional" rev="2.12.8" rev-constraint-default="2.12.8" rev-constraint-dynamic="2.12.8" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5272591" time="0" location="/home/chanaka/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.8/scala-library-2.12.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
