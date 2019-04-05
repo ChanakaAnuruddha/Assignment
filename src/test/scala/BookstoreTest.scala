@@ -1,14 +1,12 @@
 import Books.{Book, BookStore}
 import org.scalatest.FunSuite
-import org.scalatest.Matchers._
-import org.scalactic.TypeCheckedTripleEquals._
 
 
-class CubeCalculatorTest extends FunSuite {
+class BookstoreTest extends FunSuite {
   test("Add Book") {
     var store = new BookStore()
     var prev_NumOfBoooks=store.currentId
-    var newBook = new Book("The Chocolate War", "Robert Cormier", "English",456);
+    var newBook = new Book("The Chocolate War", "Robert Cormier", "English",456)
     store.addBook(newBook)
     var current_NumOfBoooks=store.currentId
 

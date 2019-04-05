@@ -47,7 +47,7 @@ object EmitDirect {
     println("Enter number of pages(Integer).")
     val pages = scala.io.StdIn.readInt()
 
-    return "{\"name\":"+name+",\"author\":"+author+",\"lang\":"+lang+",\"pages\":"+pages+"}"
+    return "{\"name\":\""+name+"\",\"author\":\""+author+"\",\"lang\":\""+lang+"\",\"pages\":"+pages+"}"
   }
 
   private def request(): Unit ={
